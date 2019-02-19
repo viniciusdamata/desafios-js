@@ -15,10 +15,11 @@ function getpessoa(){
     }
     pessoas.push(pessoa);
     console.log(pessoas)
+    alert("Adicionado com sucesso! ");
     
 }
 function listarHomens(){
-    document.getElementById("lista-h").innerHTML="Lista de Homens"
+    document.getElementById("lista-h").innerHTML="Lista de Homens";
     pessoas.forEach(element => {
             let item;
               if(element.sexo=="Masculino"){
@@ -31,7 +32,7 @@ function listarHomens(){
    }); 
 }
 function listarMulheres(){
-    document.getElementById("lista-m").innerHTML="Lista de Mulheres"
+    document.getElementById("lista-m").innerHTML="Lista de Mulheres";
     pessoas.forEach(element => {
             let item;
               if(element.sexo=="Feminino"){
