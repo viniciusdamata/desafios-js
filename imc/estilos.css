@@ -1,0 +1,32 @@
+*{
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0px;
+    
+}
+.container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    
+    
+}
+#class-area{
+    height: 100px;
+    width: 1000px;
+    font-size: 30px;
+}
+input{
+    margin: 5px;
+}
+button{
+    margin: 5px;
+    
+}
+h1{
+    text-align: center;
+}
+header{
+    padding-bottom: 10px;
+    padding-top: 10px;
+}
