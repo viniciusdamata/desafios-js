@@ -12,25 +12,29 @@
 </head>
 
 <body>
+    <header>
+        <h1>Cadastro de pessoas</h1>
+    </header>
     <div class="container">
         <h2>Nome:</h2>
-    <input id="nome" type="text">
-    <h2>Idade</h2>
-    <input id="idade" type="number">
+        <input id="nome" type="text">
+        <h2>Idade</h2>
+        <input id="idade" type="number">
 
-    <h2>Sexo:</h2>
+        <h2>Sexo:</h2>
 
-    <input type="radio" name="genero" id="" value="Masculino" checked>Masculino
-    <input type="radio" name="genero" id="" value="Feminino"> Feminino
-
-    <button type="submit" onclick="getPessoa()">Adicionar</button>
-    <button type="submit" onclick="listarMulheres()">Listar Mulheres</button>
-    <button type="submit" onclick="listarHomens()">Listar Homens</button>
-    <button type="submit" onclick="listarCriancas()">Listar Crianças</button>
-    <button type="submit" onclick="listarAdolescentes()">Listar Adolescentes</button>
-    <button type="submit" onclick="listarAdultos()">Listar Adultos</button>
-    <button type="submit" onclick="listarIdosos()">Listar Idosos</button>
-     </div>
+        <input type="radio" name="genero" id="" value="Masculino" checked>Masculino
+        <input type="radio" name="genero" id="" value="Feminino"> Feminino
+    </div>
+    <div class="container">
+        <button type="submit" onclick="getPessoa()">Adicionar</button>
+        <button type="submit" onclick="listarMulheres()">Listar Mulheres</button>
+        <button type="submit" onclick="listarHomens()">Listar Homens</button>
+        <button type="submit" onclick="listarCriancas()">Listar Crianças</button>
+        <button type="submit" onclick="listarAdolescentes()">Listar Adolescentes</button>
+        <button type="submit" onclick="listarAdultos()">Listar Adultos</button>
+        <button type="submit" onclick="listarIdosos()">Listar Idosos</button>
+    </div>
     <ul id="lista-h">
 
     </ul>
@@ -50,8 +54,8 @@
 
     </ul>
 
-   
-    
+
+
 </body>
 
 </html>

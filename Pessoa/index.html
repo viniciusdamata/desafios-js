@@ -12,17 +12,22 @@
 </head>
 
 <body>
-    <h2>Nome:</h2>
-    <input id="nome" type="text">
-    <h2>Sexo:</h2>
+    <header>
+        <h1>Cadastro de pessoas</h1>
+    </header>
+    <div class="container">
+        <h2>Nome:</h2>
+        <input id="nome" type="text">
+        <h2>Sexo:</h2>
 
-    <input type="radio" name="genero" id="" value="Masculino">Masculino
-    <input type="radio" name="genero" id="" value="Feminino"> Feminino
-
-    <button type="submit" onclick="getpessoa()">Adicionar</button>
-    <button type="submit" onclick="listarMulheres()">Listar Mulheres</button>
-    <button type="submit" onclick="listarHomens()">Listar Homens</button>
-
+        <input type="radio" name="genero" id="" value="Masculino" checked>Masculino
+        <input type="radio" name="genero" id="" value="Feminino"> Feminino
+    </div>
+    <div class="container">
+        <button type="submit" onclick="getpessoa()">Adicionar</button>
+        <button type="submit" onclick="listarMulheres()">Listar Mulheres</button>
+        <button type="submit" onclick="listarHomens()">Listar Homens</button>
+    </div>
     <ul id="lista-h">
 
     </ul>
