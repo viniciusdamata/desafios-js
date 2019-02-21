@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="estilos.css">
+    <script src="main.js"></script>
+
+</head>
+
+<body>
+    <div class="container">
+        <h2>Nome:</h2>
+    <input id="nome" type="text">
+    <h2>Idade</h2>
+    <input id="idade" type="number">
+
+    <h2>Sexo:</h2>
+
+    <input type="radio" name="genero" id="" value="Masculino" checked>Masculino
+    <input type="radio" name="genero" id="" value="Feminino"> Feminino
+
+    <button type="submit" onclick="getPessoa()">Adicionar</button>
+    <button type="submit" onclick="listarMulheres()">Listar Mulheres</button>
+    <button type="submit" onclick="listarHomens()">Listar Homens</button>
+    <button type="submit" onclick="listarCriancas()">Listar Crianças</button>
+    <button type="submit" onclick="listarAdolescentes()">Listar Adolescentes</button>
+    <button type="submit" onclick="listarAdultos()">Listar Adultos</button>
+    <button type="submit" onclick="listarIdosos()">Listar Idosos</button>
+     </div>
+    <ul id="lista-h">
+
+    </ul>
+    <ul id="lista-m">
+
+    </ul>
+    <ul id="lista-c">
+
+    </ul>
+    <ul id="lista-ado">
+
+    </ul>
+    <ul id="lista-adu">
+
+    </ul>
+    <ul id="lista-i">
+
+    </ul>
+
+   
+    
+</body>
+
+</html>
