@@ -11,7 +11,6 @@ function addPessoas() {
     nomes.push(nome);
     document.getElementById("nome").value = "";
     alert("Cadastro realizado com sucesso! ");
-    console.log(nomes);
 }
 function busca() {
     /**
@@ -25,7 +24,7 @@ function busca() {
 
     document.getElementById("resultado").innerText = "Resultado da Busca:";
     for (let i = 0; i < nomes.length; i++) {
-        if (nomes[i].toLowerCase().startsWith(nomeBusca.toLowerCase())) {
+        if (nomes[i].toLowerCase().includes(nomeBusca.toLowerCase())) {
             let elemento = document.createElement("li");
             elemento.innerText = nomes[i];
             document.getElementById("resultado").appendChild(elemento);
