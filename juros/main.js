@@ -10,10 +10,10 @@ function calculaJuros(){
     let juros = parseFloat(document.getElementById("juros").value);
     let multa = parseFloat(document.getElementById("multa").value);
   
-    document.getElementById("valor-multa").innerText+=" "+formulaMulta(multa, valor);
-    document.getElementById("dias-atraso").innerText+=" "+diasAtraso;
-    document.getElementById("valor-juros").innerText+=" "+formulaJuros(diasAtraso, juros, valor).toFixed(2);
-    document.getElementById("total").innerText+=" "+(valor+formulaMulta(multa, valor)+formulaJuros(diasAtraso, juros, valor));
+    document.getElementById("valor-multa").innerText=" "+formulaMulta(multa, valor);
+    document.getElementById("dias-atraso").innerText=" "+diasAtraso;
+    document.getElementById("valor-juros").innerText=" "+formulaJuros(diasAtraso, juros, valor).toFixed(2);
+    document.getElementById("total").innerText=" "+(valor+formulaMulta(multa, valor)+formulaJuros(diasAtraso, juros, valor));
     
     
 }

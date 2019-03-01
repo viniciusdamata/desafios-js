@@ -6,11 +6,13 @@
 #resultados {
     display: flex;
     align-items: center;
+    margin-top: 50px;
 }
 
 h2 {
-    font-size: 20px;
-    margin: 10px;
+    font-size: 18px;
+    margin: 5px;
+    
 }
 
 #juros {
@@ -27,4 +29,7 @@ h2 {
 #data{
     height: 20px;
     width: 140px;
+}
+p{
+    margin: 10px;
 }
