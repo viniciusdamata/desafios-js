@@ -1,0 +1,30 @@
+* {
+    /* margin: 0px; */
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+#resultados {
+    display: flex;
+    align-items: center;
+}
+
+h2 {
+    font-size: 20px;
+    margin: 10px;
+}
+
+#juros {
+    height: 20px;
+    width: 40px;
+    margin-left: 10px;
+}
+
+#multa {
+    height: 20px;
+    width: 40px;
+    margin-left: 10px;
+}
+#data{
+    height: 20px;
+    width: 140px;
+}

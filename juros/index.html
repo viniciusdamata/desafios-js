@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Calculadora de Parcelas</title>
+    <link rel="stylesheet" href="estilos.css">
+    <script src="main.js"></script>
+</head>
+
+<body>
+    <div id="entrada">
+        <h1>Calculadora de Parcelas</h1>
+        <h2>Juros(% a.m)</h2>
+        <input type="number" id="juros">
+        <h2>Multa por atraso(%)</h2>
+        <input type="number" id="multa">
+        
+    </div>
+    <div id="resultados">
+        <h2>Valor da Parcela</h2>
+        <input type="number" id="valor">
+        <h2>Data de Vencimento</h2>
+        <input type="date" id="data">
+        <h2 id="valor-multa">Valor da multa:</h2>
+        <h2 id="dias-atraso">Dias de atraso</h2>
+        <h2 id="valor-juros">Valor juros</h2>
+        <h2 id="total">total</h2>
+        <button onclick="calculaJuros()">Calcular</button>
+    </div>
+</body>
+
+</html>
