@@ -1,0 +1,45 @@
+* {
+    /* margin: 0px; */
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.resultados {
+    display: flex;
+    align-items: center;
+    /* margin-top: 50px; */
+}
+
+h2 {
+    font-size: 18px;
+    margin: 5px;
+    
+}
+
+#juros {
+    height: 20px;
+    width: 40px;
+    margin-left: 10px;
+}
+
+#multa {
+    height: 20px;
+    width: 40px;
+    margin-left: 10px;
+}
+.data{
+    height: 20px;
+    width: 140px;
+}
+p{
+    margin: 10px;
+}
+button{
+    margin: 5px;
+}
+.container{
+    display: flex;
+    align-items: center;
+    align-content: center;
+    flex-direction: row;
+    margin-top: 50px;
+}
