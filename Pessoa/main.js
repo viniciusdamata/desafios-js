@@ -1,6 +1,9 @@
-"use strict"
 let pessoas = new Array();
 function getpessoa() {
+    /**
+     * Recebe os dados
+     * Cria objetos e coloca os no array
+     */
     let nome = document.getElementById("nome").value;
     let sexo = document.getElementsByName("genero");
 
@@ -19,6 +22,9 @@ function getpessoa() {
 
 }
 function listarHomens() {
+    /**
+     * Exibe apenas os homens cadastrados
+     */
     document.getElementById("lista-h").innerHTML = "Lista de Homens";
     pessoas.forEach(element => {
         let item;
@@ -32,6 +38,9 @@ function listarHomens() {
     });
 }
 function listarMulheres() {
+    /**
+     * Exibe apenas as mulheres cadastradas
+     */
     document.getElementById("lista-m").innerHTML = "Lista de Mulheres";
     pessoas.forEach(element => {
         let item;

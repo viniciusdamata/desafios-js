@@ -1,11 +1,34 @@
 const formulaJuros = (d) => d.diasAtraso * (((d.juros / 30) / 100) * d.valor);
 const parseDay = (data) => parseInt(data / 8.64e+7);
 const formulaMulta = (d) => (d.multa / 100) * d.valor;
-const elementRemove = (e) => {if (e != null) e.remove();}
+const elementRemove = (e) => {  if (e != null) e.remove();}
+const geraDivs = () => {
+
+    /**
+     * Chama o element remove para remover a div com os resultados totais, caso haja
+     * Cria uma div com os inputs e demais elementos e após isso
+     *  insere-a na div principal entrada
+     */
+    elementRemove(document.getElementById("res-total"));
+    let div = document.getElementsByClassName("container")[0].cloneNode(true);
+    document.getElementById("entrada").appendChild(div);
+
+}
+const removeDiv = (element) => {
+    /**
+     * Recebe uma referencia para o botao e remove a div em que esse botão
+     * se encontra utilizando o atributo parentElement
+     */
+    if (document.getElementsByClassName("container").length > 1) {
+        elementRemove(element.parentElement);
+    } else {
+        alert("Não é permitido remover!");
+    }
+}
 
 function escreve(d, i) {
-     /**
-      * Utiliza a função element remove para remover caso exista um elemento com a
+    /**
+     * Utiliza a função element remove para remover caso exista um elemento com a
      * Mesma classe na mesma posição
      * Cria uma div e insere nela os resultados das operações
      * Insere a div criada na div principal
@@ -17,7 +40,7 @@ function escreve(d, i) {
     Juros: ${formulaJuros(d).toFixed(2)} Total: ${(d.valor + formulaMulta(d) + formulaJuros(d)).toFixed(2)}<p>`
     document.getElementsByClassName("container")[i].appendChild(div);
 
-}
+};
 
 function somaTotal(d, dt) {
     /**
@@ -48,20 +71,20 @@ function escreveTotal(dt) {
 
 function calculaJuros() {
     /**
-     * percorre o for com a quantidade de elementos na tela e:
+     * percorre o for com a quantidade de elementos na tela e
      *  -Cria um objeto para cada mensalidade na tela  
      *   -Cria um objeto divida total
      *   -Chama a função escreve, que é responsavel por calcular e mostrar o resultado 
      *      de cada mensalidade na tela
      *   -Chama a função soma total que é responsavel por calcular a soma de todas as parcelas
-     * -Chama a função escreve total que é responsavel por escrever na tela a soma de todas as parcelas
+     *  -Chama a função escreve total que é responsavel por escrever o total das parcelas
      */
-
     let valor = document.getElementsByClassName("valor");
     let data = document.getElementsByClassName("data");
     let dataAtual = new Date();
     let divida;
     //cria um objeto para guardar o total
+
     let dividaTotal = {
         valor: 0,
         juros: 0,

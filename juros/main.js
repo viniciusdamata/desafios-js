@@ -3,6 +3,10 @@ const parseDay = (data)=> parseInt(data / 8.64e+7);
 const formulaMulta = (multa, valor)=> (multa/100) * valor;
 
 function calculaJuros(){
+    /**
+     * Recebe os valores necessarios e faz uso das formulas contidas nas
+     * arrow functions para retornar o resultado final
+     */
     let valor = parseFloat(document.getElementById("valor").value);
     let dataVenc = new Date(document.getElementById("data").value);
     let dataAtual = new Date();

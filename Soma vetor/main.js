@@ -1,14 +1,19 @@
 var numeros = new Array();
 function adicionar() {
+    /**
+     * Recebe os numeros que o usuario digita e os coloca em um array
+     */
     var numero = parseFloat(document.getElementById("num").value);
     document.getElementById("num").value = null;
     numeros.push(numero);
     alert("Valor Adicionado");
-    console.log(numeros);
 
 }
 
 function calcularmedia() {
+    /**
+     * Calcula a media e mostra em um alert
+     */
     let soma = 0;
     let media = 0;
     for (let i = 0; i < numeros.length; i++) {
@@ -19,6 +24,7 @@ function calcularmedia() {
 }
 
 function limpar() {
+    // limpa o array
     numeros = new Array();
     alert("Numeros Anteriores Apagados");
 

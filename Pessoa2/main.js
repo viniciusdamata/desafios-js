@@ -1,6 +1,10 @@
-"use strict"
 let pessoas = new Array();
+
 function getPessoa() {
+    /**
+     * Recebe os dados
+     * Cria objetos e coloca os no array
+     */
     let nome = document.getElementById("nome").value;
     let sexo = document.getElementsByName("genero");
     let idade = parseInt(document.getElementById("idade").value);
@@ -12,14 +16,20 @@ function getPessoa() {
     }
 
     var pessoa = {
-        nome: nome, sexo: sexo, idade: idade
+        nome: nome,
+        sexo: sexo,
+        idade: idade
     }
     pessoas.push(pessoa);
     console.log(pessoas)
     alert("Adicionado com sucesso! ");
 
 }
+
 function listarHomens() {
+    /**
+     * Exibe apenas os homens cadastrados
+     */
     document.getElementById("lista-h").innerHTML = "Lista de Homens";
     pessoas.forEach(element => {
         let item;
@@ -32,7 +42,11 @@ function listarHomens() {
 
     });
 }
+
 function listarMulheres() {
+    /**
+     * Exibe apenas as mulheres cadastradas
+     */
     document.getElementById("lista-m").innerHTML = "Lista de Mulheres";
     pessoas.forEach(element => {
         let item;
@@ -47,6 +61,9 @@ function listarMulheres() {
 }
 
 function listarCriancas() {
+    /**
+     * Exibe apenas as crianças cadastradas
+     */
     document.getElementById("lista-c").innerHTML = "Lista de Crianças";
     pessoas.forEach(element => {
         let item;
@@ -62,6 +79,9 @@ function listarCriancas() {
 }
 
 function listarAdolescentes() {
+    /**
+     * Exibe apenas os adolescente cadastrados
+     */
     document.getElementById("lista-ado").innerHTML = "Lista de Adolescentes";
     pessoas.forEach(element => {
         let item;
@@ -75,7 +95,11 @@ function listarAdolescentes() {
     });
 
 }
+
 function listarAdultos() {
+    /**
+     * Exibe apenas os adultos cadastrados
+     */
     document.getElementById("lista-adu").innerHTML = "Lista de Adultos";
     pessoas.forEach(element => {
         let item;
@@ -90,6 +114,9 @@ function listarAdultos() {
 }
 
 function listarIdosos() {
+    /**
+     * Exibe apenas os idosos cadastrados
+     */
     document.getElementById("lista-i").innerHTML = "Lista de Idosos";
     pessoas.forEach(element => {
         let item;
@@ -104,4 +131,3 @@ function listarIdosos() {
 
 
 }
-
